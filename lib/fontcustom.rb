@@ -19,7 +19,7 @@ module Fontcustom
   EXAMPLE_OPTIONS = {
     :output => "./FONT_NAME",
     :config => "./fontcustom.yml -or- ./config/fontcustom.yml",
-    :templates => "css preview"
+    :templates => %w|css preview|
   }
 
   DEFAULT_OPTIONS = {
@@ -36,8 +36,10 @@ module Fontcustom
     :preprocessor_path => nil,
     :autowidth => false,
     :no_hash => false,
+    :css3 => false,
     :debug => false,
     :force => false,
-    :quiet => false
+    :quiet => false,
+    :copyright => ''
   }
 end
